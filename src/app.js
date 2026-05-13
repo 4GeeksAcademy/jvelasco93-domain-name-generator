@@ -11,11 +11,10 @@ const adjectives = ['great', 'big'];
 const nouns = ['jogger', 'racoon'];
 const extensions = ['.com', '.io', '.net', '.ve'];
 
-// window.onload = function() {
-//   //write your code here
-//   console.log("Hello Rigo from the console!");
-// };
+window.onload = function () {
+  generateDomains(pronouns, adjectives, nouns, extensions)
+    .forEach(domain => console.log(domain));
+};
 
-generateDomains(pronouns, adjectives, nouns, extensions)
-  .forEach(domain => console.log(domain));
+
 
